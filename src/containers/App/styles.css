@@ -1,0 +1,38 @@
+.app {
+  height: 100%;
+}
+
+.header {
+  height: 48px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 48px;
+  font-size: 28px;
+  color: rgb(147, 66, 119);
+  padding: 15px 5px 15px 5px;
+  background-color: rgb(249, 206, 98);
+  border: dotted black 5px;
+  user-select: none;
+}
+
+.order-summary {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 30px 30px 30px;
+}
+
+.order-summary li {
+  margin-top: 10px;
+}
+
+.sections {
+  height: calc(100% - 47px - 30px - 10px - 32px);
+  overflow: scroll;
+}
+
+.footer {
+  height: 32px;
+  line-height: 32px;
+  background-color: rgb(249, 206, 98);
+  text-align: center;
+}
