@@ -49,15 +49,12 @@ table {
   border-spacing: 0;
 }
 
+/* End CSS reset */
+
 html, body, #app {
   height: 100%;
   background-color: rgb(193, 153, 53);
-}
-
-body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
 }
