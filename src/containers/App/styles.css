@@ -15,24 +15,8 @@
   user-select: none;
 }
 
-.order-summary {
-  font-weight: bold;
-  font-size: 18px;
-  padding: 10px 30px 30px 30px;
-}
-
-.order-summary li {
-  margin-top: 10px;
-}
-
 .sections {
-  height: calc(100% - 47px - 30px - 10px - 32px);
+  /* 100% - height - 2x padding - 2x border */
+  height: calc(100% - 48px - 2*15px - 2*5px);
   overflow: scroll;
-}
-
-.footer {
-  height: 32px;
-  line-height: 32px;
-  background-color: rgb(249, 206, 98);
-  text-align: center;
 }
