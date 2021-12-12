@@ -30,11 +30,12 @@
     "workbox-streams": "^5.1.3"
   },
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "deploy": "rsync -avzr --progress build/ kapsi.fi:public_html/jb-hut-bungalows",
     "eject": "react-scripts eject",
-    "lint": "yarn eslint src/**/*.ts?"
+    "lint": "yarn eslint src/**/*.ts?",
+    "start": "react-scripts start",
+    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": [
