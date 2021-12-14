@@ -32,7 +32,7 @@
   },
   "scripts": {
     "build": "react-scripts build",
-    "deploy": "rsync -avzr --progress build/ kapsi.fi:public_html/jb-hut-bungalows",
+    "deploy": "yarn build && rsync -avzr --progress build/ kapsi.fi:public_html/jb-hut-bungalows",
     "eject": "react-scripts eject",
     "lint": "yarn eslint src/**/*.ts?",
     "start": "react-scripts start",
