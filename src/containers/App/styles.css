@@ -26,3 +26,10 @@
   height: calc(100% - 96px - 2*15px - 2*5px);
   overflow: scroll;
 }
+
+.modal-image {
+  height: 256px;
+  width: 256px;
+  user-select: none;
+  cursor: pointer;
+}

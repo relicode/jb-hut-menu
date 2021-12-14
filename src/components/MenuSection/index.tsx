@@ -10,6 +10,7 @@ const ARROW_UP = '\u25B2'
 type MenuSectionProps = {
   title: string,
   menuItems: MenuItem[],
+  setModalImage: React.Dispatch<React.SetStateAction<string>>,
 }
 
 const MenuSection: React.FC<MenuSectionProps> = (props): JSX.Element => {
@@ -23,6 +24,11 @@ const MenuSection: React.FC<MenuSectionProps> = (props): JSX.Element => {
       {open && menuItems.map(([, name, price, imageBaseName]) => (
         <div
           key={[title, name].join('/')}
+          onClick={() => {
+            props.setModalImage(imageBaseName
+              ? `${process.env.PUBLIC_URL}/img/menu/${imageBaseName}__256x256.jpg`
+              : imageBaseName)
+          }}
         >
           <div className={styles.itemImage}>
             <img src={imageBaseName
