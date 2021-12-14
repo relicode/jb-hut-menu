@@ -17,14 +17,27 @@
   padding: 10px;
   user-select: none;
   cursor: pointer;
+  min-height: 48px;
+  align-items: center;
 }
 
 .section > div:hover {
   background-color: rgb(249, 206, 98);
 }
 
+.itemImage {
+  flex: 1;
+}
+
+.itemImage > img {
+  height: 46px;
+  width: 46px;
+  border: solid black 1px;
+  border-radius: 50%;
+}
+
 .itemName {
-  flex: 9;
+  flex: 8;
 }
 
 .itemPrice {
