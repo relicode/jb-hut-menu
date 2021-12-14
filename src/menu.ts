@@ -102,7 +102,7 @@ const menu: MenuItem[] = [
   ['Stir-fried', 'Stir-fried mixed vegetable oyster sauce with chicken, pork, seafood, tofu', 100, ''],
   ['Stir-fried', 'Stir-fried mixed vegetable oyster sauce with beef', 120, ''],
   ['Stir-fried', 'Stir-fried massaman curry with chicken, pork, seafood, tofu', 100, 'massaman-curry-chicken'],
-  ['Stir-fried', 'Stir-fried panang curry with chicken, pork, seafood, tofu', 100, ''],
+  ['Stir-fried', 'Stir-fried panang curry with chicken, pork, seafood, tofu', 100, 'panang-curry-tofu'],
   ['Curry soup', 'Vegetable clear soup', 90, ''],
   ['Curry soup', 'Vegetable clear soup with chicken, pork, seafood, tofu', 100, ''],
   ['Curry soup', 'Tom yam with chicken, pork, shrimp, seafood, tofu', 100, 'tom-yam-shrimp'],

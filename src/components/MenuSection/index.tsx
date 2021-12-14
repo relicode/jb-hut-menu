@@ -13,6 +13,12 @@ type MenuSectionProps = {
   setModalImage: React.Dispatch<React.SetStateAction<string>>,
 }
 
+const generateMenuImageUrl = (imageBaseName: string, size: 256 | 1024) => (
+  imageBaseName
+    ? `${process.env.PUBLIC_URL}/img/menu/${imageBaseName}__${size}x${size}.jpg`
+    : imageBaseName // ''
+)
+
 const MenuSection: React.FC<MenuSectionProps> = (props): JSX.Element => {
   const { title, menuItems } = props
   const [open, setOpen] = useState(false)
@@ -21,18 +27,16 @@ const MenuSection: React.FC<MenuSectionProps> = (props): JSX.Element => {
       <header className={styles.header} onClick={() => { setOpen(!open) }}>
         {title} {open ? ARROW_UP : ARROW_DOWN}
       </header>
-      {open && menuItems.map(([, name, price, imageBaseName]) => (
+      {open && menuItems.map(([category, name, price, imageBaseName]) => (
         <div
-          key={[title, name].join('/')}
+          key={[category, title, name].join('/')}
           onClick={() => {
-            props.setModalImage(imageBaseName
-              ? `${process.env.PUBLIC_URL}/img/menu/${imageBaseName}__256x256.jpg`
-              : imageBaseName)
+            props.setModalImage(generateMenuImageUrl(imageBaseName, 1024))
           }}
         >
           <div className={styles.itemImage}>
             <img src={imageBaseName
-              ? `${process.env.PUBLIC_URL}/img/menu/${imageBaseName}__256x256.jpg`
+              ? generateMenuImageUrl(imageBaseName, 256)
               : defaultImage
             }/>
           </div>
