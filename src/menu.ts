@@ -1,5 +1,3 @@
-export const BAHT = '฿' as const
-
 export const menuCategory = [
   'Drink', 'Soft drinks - beer - whisky', 'Breakfast',
   'Rice dishes', 'Stir-fried', 'Curry soup',

@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
 
 import styles from './styles.module.css'
-import { BAHT, MenuItem } from '../../menu'
+import {
+  BAHT, SMALL_IMAGE_LENGTH, LARGE_IMAGE_LENGTH,
+} from '../../constants'
+import { MenuItem } from '../../menu'
 import defaultImage from '../../assets/img/logo__256x256.png'
 
 const ARROW_DOWN = '\u25BC'
@@ -13,7 +16,10 @@ type MenuSectionProps = {
   setModalImage: React.Dispatch<React.SetStateAction<string>>,
 }
 
-const generateMenuImageUrl = (imageBaseName: string, size: 256 | 1024) => (
+const generateMenuImageUrl = (
+  imageBaseName: string,
+  size: typeof SMALL_IMAGE_LENGTH | typeof LARGE_IMAGE_LENGTH
+) => (
   imageBaseName
     ? `${process.env.PUBLIC_URL}/img/menu/${imageBaseName}__${size}x${size}.jpg`
     : imageBaseName // ''
@@ -31,12 +37,12 @@ const MenuSection: React.FC<MenuSectionProps> = (props): JSX.Element => {
         <div
           key={[category, title, name].join('/')}
           onClick={() => {
-            props.setModalImage(generateMenuImageUrl(imageBaseName, 1024))
+            props.setModalImage(generateMenuImageUrl(imageBaseName, LARGE_IMAGE_LENGTH))
           }}
         >
           <div className={styles.itemImage}>
             <img src={imageBaseName
-              ? generateMenuImageUrl(imageBaseName, 256)
+              ? generateMenuImageUrl(imageBaseName, SMALL_IMAGE_LENGTH)
               : defaultImage
             }/>
           </div>
