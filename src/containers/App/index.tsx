@@ -35,6 +35,7 @@ const App: React.FC = (): JSX.Element => {
           onClick={() => { setModalImage('') }}
           src={modalImage || defaultImage}
         />
+        <p className="modal-telephone">tel. (+66) 896 519 245</p>
       </Modal>
       <header className="header">
         <img src={logo} />
