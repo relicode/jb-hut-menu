@@ -1,6 +1,6 @@
 {
   "name": "jb-hut",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": true,
   "homepage": "https://mccall.kapsi.fi/jb-hut-bungalows",
   "dependencies": {
