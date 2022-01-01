@@ -152,7 +152,7 @@ const menu: MenuItem[] = [
   ['Noodle dishes', 'Pad thai noodle vegetable chicken, pork, seafood, tofu', 100, 'fried-noodle-with-tofu'],
   ['Noodle dishes', 'Fried noodle with vegetable & eggs', 90, 'noodles-w-vegetable-and-egg'],
   ['Noodle dishes', 'Fried noodle with chicken, pork, seafood, tofu', 100, ''],
-  ['Noodle dishes', '(Mama) fried yellow noodle with chicken, pork, seafood, tofu', 100, ''],
+  ['Noodle dishes', '(Mama) fried yellow noodle with chicken, pork, seafood, tofu', 100, 'stir-fried-noodle-tofu'],
   ['Noodle dishes', 'Fried glass noodle with chicken, pork, seafood, tofu', 100, ''],
   ['Noodle dishes', 'Radna vegetable with chicken, pork, seafood, tofu', 100, ''],
   ['Noodle dishes', 'Noodle soup vegetable with chicken, pork, seafood, tofu', 100, ''],
@@ -168,7 +168,7 @@ const menu: MenuItem[] = [
   ['B.B.Q', 'Tandoori with chicken', 250, ''],
   ['B.B.Q', 'Fried prawn in thai curry sauce', 250, ''],
   ['B.B.Q', 'B.B.Q fish', 250, 'fish-bbq'], // not in menu card
-  ['Spaghetti & Macaroni', 'Macaroni cheese', 90, ''],
+  ['Spaghetti & Macaroni', 'Macaroni cheese', 90, 'macaroni-w-cheese'],
   ['Spaghetti & Macaroni', 'Spaghetti cheese', 90, ''],
   ['Spaghetti & Macaroni', 'Spaghetti & tomato sauce', 90, ''],
   ['Spaghetti & Macaroni', 'Spaghetti bolognese', 100, ''],
